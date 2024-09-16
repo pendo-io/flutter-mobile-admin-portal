@@ -59,6 +59,8 @@ import 'package:invoiceninja_flutter/redux/purchase_order/purchase_order_middlew
 import 'package:invoiceninja_flutter/redux/transaction_rule/transaction_rule_middleware.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:invoiceninja_flutter/redux/schedule/schedule_middleware.dart';
+
+import 'pendo_init.dart';
 // STARTER: import - do not remove comment
 
 import 'package:invoiceninja_flutter/utils/web_stub.dart'
@@ -114,6 +116,7 @@ class MyHttpOverrides extends HttpOverrides {
 
 void main({bool isTesting = false}) async {
   WidgetsFlutterBinding.ensureInitialized();
+  PendoInstance.initPendo();
 
   final prefs = await SharedPreferences.getInstance();
   HttpOverrides.global =

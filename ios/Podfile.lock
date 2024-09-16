@@ -5,9 +5,6 @@ PODS:
   - AppAuth/Core (1.7.5)
   - AppAuth/ExternalUserAgent (1.7.5):
     - AppAuth/Core
-  - connectivity_plus (0.0.1):
-    - Flutter
-    - FlutterMacOS
   - contacts_service (0.2.2):
     - Flutter
   - device_info_plus (0.0.1):
@@ -86,6 +83,10 @@ PODS:
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
+  - Pendo (3.4.0.8750)
+  - pendo_sdk (3.4.0):
+    - Flutter
+    - Pendo (~> 3.4.0)
   - permission_handler_apple (9.3.0):
     - Flutter
   - printing (1.0.0):
@@ -117,7 +118,6 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - connectivity_plus (from `.symlinks/plugins/connectivity_plus/darwin`)
   - contacts_service (from `.symlinks/plugins/contacts_service/ios`)
   - device_info_plus (from `.symlinks/plugins/device_info_plus/ios`)
   - file_picker (from `.symlinks/plugins/file_picker/ios`)
@@ -132,6 +132,7 @@ DEPENDENCIES:
   - package_info (from `.symlinks/plugins/package_info/ios`)
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
+  - pendo_sdk (from `.symlinks/plugins/pendo_sdk/ios`)
   - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
   - printing (from `.symlinks/plugins/printing/ios`)
   - sentry_flutter (from `.symlinks/plugins/sentry_flutter/ios`)
@@ -151,14 +152,13 @@ SPEC REPOS:
     - GoogleSignIn
     - GTMAppAuth
     - GTMSessionFetcher
+    - Pendo
     - SDWebImage
     - Sentry
     - SwiftyGif
     - TOCropViewController
 
 EXTERNAL SOURCES:
-  connectivity_plus:
-    :path: ".symlinks/plugins/connectivity_plus/darwin"
   contacts_service:
     :path: ".symlinks/plugins/contacts_service/ios"
   device_info_plus:
@@ -187,6 +187,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/package_info_plus/ios"
   path_provider_foundation:
     :path: ".symlinks/plugins/path_provider_foundation/darwin"
+  pendo_sdk:
+    :path: ".symlinks/plugins/pendo_sdk/ios"
   permission_handler_apple:
     :path: ".symlinks/plugins/permission_handler_apple/ios"
   printing:
@@ -210,7 +212,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
-  connectivity_plus: ddd7f30999e1faaef5967c23d5b6d503d10434db
   contacts_service: 849e1f84281804c8bfbec1b4c3eedcb23c5d3eca
   device_info_plus: c6fb39579d0f423935b0c9ce7ee2f44b71b9fce6
   DKImagePickerController: 946cec48c7873164274ecc4624d19e3da4c1ef3c
@@ -230,6 +231,8 @@ SPEC CHECKSUMS:
   package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
   package_info_plus: 58f0028419748fad15bf008b270aaa8e54380b1c
   path_provider_foundation: 3784922295ac71e43754bd15e0653ccfd36a147c
+  Pendo: ff83129c263a299daedc5c980d9e72d9750bcc44
+  pendo_sdk: 26135a3f7c5f5e96232e8702dc6d4f36116d8ec5
   permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
   printing: 233e1b73bd1f4a05615548e9b5a324c98588640b
   SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
@@ -247,4 +250,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3005ff604479ae2d844823dff36ae514d2c44ab9
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.13.0

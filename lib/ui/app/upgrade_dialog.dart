@@ -154,10 +154,10 @@ class _UpgradeDialogState extends State<UpgradeDialog> {
     if (_purchasePending) {
       stack.add(
         Stack(
-          children: const <Widget>[
+          children: <Widget>[
             Opacity(
               opacity: 0.3,
-              child: ModalBarrier(dismissible: false, color: Colors.grey),
+              child:  ModalBarrier(dismissible: false, color: Colors.grey),
             ),
             Center(
               child: CircularProgressIndicator(),
